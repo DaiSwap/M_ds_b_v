@@ -14,8 +14,10 @@ except FileNotFoundError:
 # Print a summary of the data in Melbourne data
 print("Data summary:")
 print(melbourne_data.describe())
+# dropna drops missing values (think of na as "not available")
+melbourne_data = melbourne_data.dropna(axis=0) 
+
 # to print all the column names
-melbourne_data = melbourne_data.dropna(axis=0)
 print("Column names:")
 print(melbourne_data.columns)
 

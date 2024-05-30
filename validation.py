@@ -24,3 +24,4 @@ predicted_home_prices = melbourne_model.predict(X)
 r = mean_absolute_error(y, predicted_home_prices)
 print("mean:")
 print(r)
+'''this is an insample score'''
